@@ -1,11 +1,10 @@
 import React from 'react';
+import AltaUsuario from './components/alta-usuario';
 
 
 function App() {
   return (
-    <div className="App">
-      <p>Hola Mundo</p>
-    </div>
+    <AltaUsuario/>
   );
 }
 
