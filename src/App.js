@@ -3,9 +3,8 @@ import AltaUsuario from './components/alta-usuario';
 
 
 function App() {
-  console.log(AltaUsuario);
   return (
-    <AltaUsuario/>
+    <AltaUsuario/> 
   );
 }
 
