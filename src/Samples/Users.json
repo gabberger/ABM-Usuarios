@@ -1,0 +1,26 @@
+[
+    {
+        "id":0,
+        "user": "GabboSlalom",
+        "pass": 1234,
+        "email": "gabboslalom@gmail.com"
+    },
+    {
+        "id":1,
+        "user": "Kev1994",
+        "pass": "peace",
+        "email": "kevinF1994@gmail.com"
+    },
+    {
+        "id":2,
+        "user": "Alec",
+        "pass": "He2!",
+        "email": "alejc@mymail.com"
+    },
+    {
+        "id":3,
+        "user": "Andy",
+        "pass": "1245!",
+        "email": "Andy@mymail.com"
+    }
+]
