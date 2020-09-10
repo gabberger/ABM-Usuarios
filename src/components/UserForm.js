@@ -2,9 +2,19 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-class AltaUsuario extends React.Component{
+class UserForm extends React.Component{
+    
+    onSubmit = (event) => {
+        event.preventDefault(); 
+        alert("Se dara de alta un nuevo usuario");
+        const user = document.getElementById("user").value;
+        const pass = document.getElementById("pass").value;
+        const email = document.getElementById("email").value;
+        this.props.newuser(user,pass,email)
+    }
     
     render(){
+        
         return <div id="contenedor" className="container">
         <div className="col-md-4 mt-5 mb-3">
             <div className="card">
@@ -16,6 +26,7 @@ class AltaUsuario extends React.Component{
                 <div className="card-body">
                     <form 
                         id="newUser"
+                        onSubmit={this.onSubmit}
                     >
                         <div className="form-group">
                             <input
@@ -29,6 +40,12 @@ class AltaUsuario extends React.Component{
                                 className="form-control" 
                                 id="pass" 
                                 placeholder="Insert a new password"
+                            >
+                            </input>
+                            <input
+                                className="form-control" 
+                                id="email" 
+                                placeholder="Insert a new email"
                             >
                             </input>
                         </div>     
@@ -51,4 +68,4 @@ class AltaUsuario extends React.Component{
 
 
 
-export default AltaUsuario;
+export default UserForm;
