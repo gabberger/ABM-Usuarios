@@ -19,8 +19,8 @@ class UserForm extends React.Component{
     
     render(){
         
-        return <div id="contenedor" className="container">
-        <div className="col-md-4 mt-5 mb-3">
+        return <div id="contenedor" className="container col-md-3">
+        <div className=" mt-5 mb-3">
             <div className="card">
                
                 <div className="card-header">
@@ -44,6 +44,7 @@ class UserForm extends React.Component{
                                 className="form-control" 
                                 id="pass" 
                                 placeholder="Insert a new password"
+                                type="password"
                             >
                             </input>
                             <input

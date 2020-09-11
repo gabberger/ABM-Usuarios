@@ -1,4 +1,5 @@
 import React from 'react';
+import uuid from 'react-uuid';
 import UserForm from './components/UserForm';
 import User from './components/Users';
 
@@ -11,19 +12,19 @@ class App extends React.Component{
     users: UsersJson
   };
 
-  addUser = (user, pass, email) => {
-    console.log("Se generara un usuario");
+  addUser = (user, pass, email) => { 
+  
     const newUser = {
       user: user,
       pass: pass,
       email: email,
-      id: this.state.users.length
+      id: uuid().split('',6),
     }
 
     this.setState({
       users: [...this.state.users,newUser]
-    });
-    
+    }) 
+ 
   }
 
   deleteUser = (id) => {
