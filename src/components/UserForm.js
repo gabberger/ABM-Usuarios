@@ -7,10 +7,14 @@ class UserForm extends React.Component{
     onSubmit = (event) => {
         event.preventDefault(); 
         alert("Se dara de alta un nuevo usuario");
-        const user = document.getElementById("user").value;
-        const pass = document.getElementById("pass").value;
-        const email = document.getElementById("email").value;
+        let user = document.getElementById("user").value;
+        let pass = document.getElementById("pass").value;
+        let email = document.getElementById("email").value;
         this.props.newuser(user,pass,email)
+        document.getElementById("user").value = '';
+        document.getElementById("pass").value = '';
+        document.getElementById("email").value = '';
+
     }
     
     render(){

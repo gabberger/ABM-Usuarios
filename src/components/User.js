@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 export default class User extends React.Component{
 
     render(){
-        return <div className="mt-2 col-md-3 container"> 
+        return <div className="mt-2 col-md-3  d-flex justify-content-start container"> 
                <div className="card">
                 <div className="card-header">
                         <h4 className="card-text">User</h4>
